@@ -1,0 +1,18 @@
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Converta kg, g e libras. Use a ferramenta grátis online.">
+<meta name="robots" content="index,follow"><link rel="canonical" href="https://kapunido.github.io/ferramentas-gratis/massa.html">
+<meta name="theme-color" content="#090e1a"><title>Conversor de Massa | Ferramentas Grátis</title><link rel="stylesheet" href="style.css">
+</head><body><header><nav><a class="logo" href="index.html">⚡ Ferramentas Grátis</a><a href="index.html">Todas as ferramentas</a><a href="privacidade.html">Privacidade</a></nav></header>
+<main class="wrap"><section class="hero"><a class="crumb" href="index.html">← Todas as ferramentas</a><h1>⚖️ Conversor de Massa</h1><p>Converta kg, g e libras.</p></section>
+<section class="tool"><label for="mass">Valor</label><input id="mass" type="number" placeholder="1">
+<label for="from">Conversão</label><select id="from"><option value="kg-g">kg → g</option><option value="g-kg">g → kg</option><option value="kg-lb">kg → lb</option><option value="lb-kg">lb → kg</option></select><button onclick="run()">Calcular / Converter</button><div id="result" class="result">O resultado aparecerá aqui.</div></section>
+<div class="ad">Espaço para anúncio<small>Substitua por código de anúncios após aprovação.</small></div>
+<article class="content"><h2>Como usar conversor de massa</h2><p>Preencha os campos acima e clique no botão para obter o resultado. Esta ferramenta funciona diretamente no navegador e não exige cadastro.</p><h2>Sobre esta ferramenta</h2><p>Esta é uma ferramenta gratuita criada para facilitar tarefas do dia a dia. Os resultados são estimativas quando dependem de fórmulas ou dados fornecidos pelo usuário.</p><h2>Importante</h2><p>Para decisões financeiras, médicas ou profissionais, confira os resultados com uma fonte qualificada. Esta ferramenta não substitui orientação profissional.</p></article>
+<h2>Outras ferramentas</h2><div class="links"><a href="calculadora.html">🧮 Calculadora Online</a><a href="porcentagem.html">📊 Calculadora de Porcentagem</a><a href="regra-de-tres.html">📐 Regra de Três</a><a href="imc.html">⚖️ Calculadora de IMC</a><a href="idade.html">🎂 Calculadora de Idade</a><a href="juros.html">💰 Juros Simples e Compostos</a></div></main>
+<footer class="footer"><div class="footer-inner"><span>© 2026 Ferramentas Grátis</span><span><a href="privacidade.html">Privacidade</a> · <a href="termos.html">Termos</a> · <a href="contato.html">Contato</a></span></div></footer>
+<script>const $=id=>document.getElementById(id), val=id=>$(id).value, n=id=>Number(val(id));
+const fmt=x=>Number.isFinite(x)?x.toLocaleString("pt-BR",{maximumFractionDigits:8}):"valor inválido";
+function show(x){$("result").textContent=x}
+function run(){const x=n('mass'),f=val('from'); const r={'kg-g':x*1000,'g-kg':x/1000,'kg-lb':x*2.20462262,'lb-kg':x/2.20462262}[f]; show(fmt(r));}
+</script></body></html>

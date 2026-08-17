@@ -1,0 +1,17 @@
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Calcule a média de várias notas ou números. Use a ferramenta grátis online.">
+<meta name="robots" content="index,follow"><link rel="canonical" href="https://kapunido.github.io/ferramentas-gratis/media.html">
+<meta name="theme-color" content="#090e1a"><title>Calculadora de Média | Ferramentas Grátis</title><link rel="stylesheet" href="style.css">
+</head><body><header><nav><a class="logo" href="index.html">⚡ Ferramentas Grátis</a><a href="index.html">Todas as ferramentas</a><a href="privacidade.html">Privacidade</a></nav></header>
+<main class="wrap"><section class="hero"><a class="crumb" href="index.html">← Todas as ferramentas</a><h1>📝 Calculadora de Média</h1><p>Calcule a média de várias notas ou números.</p></section>
+<section class="tool"><label for="numbers">Números separados por vírgula</label><input id="numbers" type="text" placeholder="7, 8.5, 9"><button onclick="run()">Calcular / Converter</button><div id="result" class="result">O resultado aparecerá aqui.</div></section>
+<div class="ad">Espaço para anúncio<small>Substitua por código de anúncios após aprovação.</small></div>
+<article class="content"><h2>Como usar calculadora de média</h2><p>Preencha os campos acima e clique no botão para obter o resultado. Esta ferramenta funciona diretamente no navegador e não exige cadastro.</p><h2>Sobre esta ferramenta</h2><p>Esta é uma ferramenta gratuita criada para facilitar tarefas do dia a dia. Os resultados são estimativas quando dependem de fórmulas ou dados fornecidos pelo usuário.</p><h2>Importante</h2><p>Para decisões financeiras, médicas ou profissionais, confira os resultados com uma fonte qualificada. Esta ferramenta não substitui orientação profissional.</p></article>
+<h2>Outras ferramentas</h2><div class="links"><a href="calculadora.html">🧮 Calculadora Online</a><a href="porcentagem.html">📊 Calculadora de Porcentagem</a><a href="regra-de-tres.html">📐 Regra de Três</a><a href="imc.html">⚖️ Calculadora de IMC</a><a href="idade.html">🎂 Calculadora de Idade</a><a href="juros.html">💰 Juros Simples e Compostos</a></div></main>
+<footer class="footer"><div class="footer-inner"><span>© 2026 Ferramentas Grátis</span><span><a href="privacidade.html">Privacidade</a> · <a href="termos.html">Termos</a> · <a href="contato.html">Contato</a></span></div></footer>
+<script>const $=id=>document.getElementById(id), val=id=>$(id).value, n=id=>Number(val(id));
+const fmt=x=>Number.isFinite(x)?x.toLocaleString("pt-BR",{maximumFractionDigits:8}):"valor inválido";
+function show(x){$("result").textContent=x}
+function run(){const a=val('numbers').split(/[,;\s]+/).map(Number).filter(Number.isFinite); show(a.length?'Média: '+fmt(a.reduce((x,y)=>x+y,0)/a.length):'Digite números válidos');}
+</script></body></html>

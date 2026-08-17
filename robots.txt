@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kapunido.github.io/ferramentas-gratis/sitemap.xml
